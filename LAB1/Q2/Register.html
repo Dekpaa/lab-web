@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign up twitter</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="register.css">
+</head>
+<script>
+  function validateForm() {
+  //collect form data in Twitter variables
+     var pw = document.getElementById("pswd").value;
+     var name = document.getElementById("name").value;
+     var email = document.getElementById("email").value;
+        
+     //check empty name field
+    if(name == "") {
+      document.getElementById("blankMsg").innerHTML = "**What's your name?";
+      return false;
+      }
+    //check name
+    if(!isNaN(name)){
+      document.getElementById("blankMsg").innerHTML = "**What's your name?";
+      return false;
+        }
+    //email validation
+    if(!isNaN(email)){
+      document.getElementById("charMsg").innerHTML = "**Please enter a valid email";
+      return false;
+      } 
+    //minimum password length validation
+    if(pw.length < 6) {
+      document.getElementById("message1").innerHTML = "**Your password must be atleast 6 characters";
+      return false;
+      } else {
+      alert ("Sign up successfully");
+      }
+    }
+</script>
+<body>
+<div class="box"> 
+    <div class="container"></div>
+    <div class="input[type=text], input[type=password] "></div> 
+    <div class="input[type=text]:focus, input[type=password]:focus"></div> 
+    <div class="hr"></div> 
+    <div class="button "></div>
+    <div class=".registerbtn:hover "></div> 
+    <div class="a"></div>
+    <div class=".signin"></div>
+    <h1 style="color:blue">Login Twitter</h1>
+    <form onsubmit ="return validateForm()">
+
+<!-- Enter full name -->
+<input type="text" placeholder="Full name" name="name" id="name" value = "" >
+<span id = "blankMsg" style="color:red"> </span> <br><br>
+<!-- Enter email -->
+<input type="text" placeholder=" Email" name="email" id="email" value = "" >
+<span id = "charMsg" style="color:red"> </span> <br><br>
+<!-- Password -->
+<input type = "password" placeholder=" Password " name="pswd"id = "pswd" value = ""> 
+<span id = "message1" style="color:red"> </span> <br><br>
+<!-- Click to verify details -->
+<input type="checkbox" id="twitter" name="twitter" required> Personalize Twitter based on where you've seen twitter <br> content on the web.
+<a href="https://help.twitter.com/en/rules-and-policies/twitter-cookies">Learn more</a>.<br><br>
+<button type="submit"value = "Submit" >Sign Up</button>
+</form>
+</body>
+</html>

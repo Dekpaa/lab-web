@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+button{
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: rgb(255, 240, 240);
+    background-color:rgb(0, 0, 0);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+}
+
+body{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 400px;
+    margin: auto;  
+}
+.border {
+  width: 400px;
+  height: 660px;
+  margin: auto;  
+  border: 3px solid rgb(0, 0, 0);
+  background-color: rgb(225, 227, 163);
+}
+
+title{
+    color: black;
+    font-size: 18px;
+}
+
+h1{
+    margin-top: 10%;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif
+}
+
+.imgCen{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+p{
+    text-align: center;
+}
+.name{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.link{
+    text-align: center;
+}
+
+#btn:hover{
+    opacity: 0.7;
+}
+</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile Card</title>
+</head>
+<div class="border"> 
+<h1>Student Profile Card</h1>
+<body>
+    <img src="/images/dekpa.jpeg" class="imgCen" height="230" title="Comel tak saya">
+    <br>
+    <p class="name">NUR SYIFAA ADILLA BINTI MOHD ZAKI</p>
+    <p>Expert in: CSS & HTML, JAVASCRIPT</p>
+    <p>UTHM PAGOH</p>
+    <br>
+    <div class="link">
+        <a href="https://twitter.com/syifaa_adilla" ><img src="/images/twitter.png" height="30"></a>
+        <a href="https://instagram.com/syifaa.adillaaa" ><img src="/images/instagram.png" height="30"></a>
+        <a href="https://github.com/Dekpaa" ><img src="/images/github.png" height="30"></a>
+    </div><br><br>
+    <button id="btn" type="button" onclick="alert('My Number: 01137149472') ">Contact Me</button><br>
+    <button id="btn" type="button" onclick="myFunction()">Hire Me</button>
+    <script>
+        function myFunction(){
+            alert("Hello");
+            alert("Sir");
+            alert("Hire Me");
+        }
+    </script>
+</body></div>
+</html>

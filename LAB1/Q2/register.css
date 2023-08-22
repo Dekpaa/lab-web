@@ -1,0 +1,71 @@
+Register.css
+{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.box{
+width: 900px;
+height: 530px;
+padding: 20;
+margin: 100px auto;
+text-align: left;
+font-family: arial;
+border: 2px solid black;
+}
+ 
+.container {
+  padding: 18px;
+  background-color: white;
+}
+ 
+input[type=text], input[type=password] {
+  width: 60%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+ 
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+ 
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+button {
+border: none;
+border-radius: 25px;
+background: #3868bf;
+outline: 0;
+display: inline-block;
+padding: 16px 20px;
+color: white;
+text-align: center;
+cursor: pointer;
+width: 60%;
+font-size: 18px;
+ 
+}
+ 
+.registerbtn:hover {
+  opacity: 1;
+}
+ 
+a {
+  color: dodgerblue;
+}
+ 
+.signin {
+  background-color: white;
+  text-align: center;
+}
